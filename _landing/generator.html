@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <link href="../bootstrap-5.2.0-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./generator.css" rel="stylesheet">
+    <title>Passnager</title>
+</head>
+<body id="test">
+    <div class="container">
+       <header>
+            <h1>Passnager</h1>
+            <hr>
+       </header>
+       <main>
+            <h3>Password Generator</h3>
+            <div id="result" >
+            </div>
+            <hr>
+          <div id="buttons">
+            <button class="btn btn-primary">Save</button>
+            <button class="btn btn-primary" id="generate">Generate</button>
+          </div>
+       </main>
+    </div>
+</body>
+<script type="module" src="./script.js"></script>
+</html>
